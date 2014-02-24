@@ -60,6 +60,7 @@
 #define VCD_I_REQ_IFRAME   (VCD_START_REQ + 0x1)
 
 #define VCD_I_RESERVED_BASE  (VCD_START_BASE + 0x10000)
+#define VCD_I_ENABLE_VUI_BITSTREAM_RESTRICT_FLAG (VCD_START_BASE + 0x2F)
 
 struct vcd_property_hdr {
 	u32    prop_id;
@@ -370,4 +371,7 @@ struct vcd_property_sps_pps_for_idr_enable {
 	u32 sps_pps_for_idr_enable_flag;
 };
 
+struct vcd_property_bitstream_restrict_enable {
+   u32 bitstream_restrict_enable_flag;
+};
 #endif
